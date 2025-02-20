@@ -54,35 +54,32 @@
   <!-- contact section -->
 
   <!-- Contact Section (Fully Centered) -->
-<section class="contact_section layout_padding" style="display: flex; justify-content: center; align-items: center; text-align: center; height: 100vh;">
-  
-  <!-- Centered Container with Fixed Width -->
-  <div style="max-width: 600px; width: 100%;">
-    
-    <!-- Centered Heading -->
-    <h2 style="text-align: center; color: white;">Contact Us</h2>
+<section>
+  <!-- Contact Section -->
+<form action="https://formspree.io/f/xdkayrln" method="POST" style="max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px; padding: 20px; background-color: #f8f8f8; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
 
-    <!-- Centered Form -->
-       <form action="https://formspree.io/f/xdkayrln" style="max-width: 500px; margin: 0 auto;">
-      <input type="text" placeholder="Name" required style="width: 100%; padding: 10px; margin: 10px 0;" />
-      <input type="text" placeholder="Phone Number" required style="width: 100%; padding: 10px; margin: 10px 0;" />
-      <input type="email" placeholder="Email" required style="width: 100%; padding: 10px; margin: 10px 0;" />
-      <textarea placeholder="Message" required style="width: 100%; padding: 10px; margin: 10px 0; height: 120px;"></textarea>
+  <!-- Email Field -->
+  <label style="width: 100%; font-weight: bold; color: #333;">
+    Your Email:
+    <input type="email" name="email" required style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ddd; border-radius: 5px;">
+  </label>
 
-      <button style="background-color: rgb(68, 1, 1); border: 2px solid white; color: white; 
-      padding: 12px 20px; font-size: 16px; font-weight: bold; border-radius: 5px; cursor: pointer; 
-      transition: all 0.3s ease-in-out;" 
-      type="submit"
-      onmouseover="this.style.backgroundColor='#0a2202'; this.style.borderColor='#36ad12';"
-      onmouseout="this.style.backgroundColor='rgb(68, 1, 1)'; this.style.borderColor='white';">
-      SEND MESSAGE
-</button>
+  <!-- Message Field -->
+  <label style="width: 100%; font-weight: bold; color: #333;">
+    Your Message:
+    <textarea name="message" required style="width: 100%; padding: 10px; margin-top: 5px; height: 120px; border: 1px solid #ddd; border-radius: 5px;"></textarea>
+  </label>
 
+  <!-- Submit Button -->
+  <button type="submit" style="background-color: rgb(68, 1, 1); border: 2px solid white; color: white; 
+    padding: 12px 20px; font-size: 16px; font-weight: bold; border-radius: 5px; cursor: pointer; 
+    transition: all 0.3s ease-in-out;" 
+    onmouseover="this.style.backgroundColor='#0a2202'; this.style.borderColor='#36ad12';"
+    onmouseout="this.style.backgroundColor='rgb(68, 1, 1)'; this.style.borderColor='white';">
+    SEND MESSAGE
+  </button>
 
-    </form>
-
-  </div>
-
+</form>
 </section>
 
             </div>
