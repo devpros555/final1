@@ -310,23 +310,24 @@ height: 100vh; background: url('images/landscaping.jpg') no-repeat center center
     <h2 style="color: white; text-align: center;"> GET IN TOUCH WITH US </h2>
 
     <!-- **Centered Form** -->
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <input type="text" placeholder="Name" required style="width: 100%; padding: 10px; margin: 10px 0;" />
-      <input type="text" placeholder="Phone Number" required style="width: 100%; padding: 10px; margin: 10px 0;" />
-      <input type="email" placeholder="Email" required style="width: 100%; padding: 10px; margin: 10px 0;" />
-      <textarea placeholder="Message" required style="width: 100%; padding: 10px; margin: 10px 0; height: 120px;"></textarea>
+ <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+  
+  <!-- Name Field -->
+  <label for="name">Your Name:</label>
+  <input type="text" id="name" name="name" required>
 
-      <button style="background-color: rgb(68, 1, 1); border: 2px solid white; color: white; 
-      padding: 12px 20px; font-size: 16px; font-weight: bold; border-radius: 5px; cursor: pointer; 
-      transition: all 0.3s ease-in-out;" 
-      type="submit"
-      onmouseover="this.style.backgroundColor='#0a2202'; this.style.borderColor='#36ad12';"
-      onmouseout="this.style.backgroundColor='rgb(68, 1, 1)'; this.style.borderColor='white';">
-      SEND MESSAGE
-</button>
+  <!-- Email Field -->
+  <label for="email">Your Email:</label>
+  <input type="email" id="email" name="email" required>
 
+  <!-- Message Field -->
+  <label for="message">Your Message:</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
 
-    </form>
+  <!-- Submit Button -->
+  <button type="submit">Send Message</button>
+</form>
+
 
   </div>
 </section>
