@@ -310,28 +310,35 @@ height: 100vh; background: url('images/landscaping.jpg') no-repeat center center
     <h2 style="color: white; text-align: center;"> GET IN TOUCH WITH US </h2>
 
     <!-- **Centered Form** -->
-<form action="https://formspree.io/f//f/xdkayrln" method="POST">
+    <form action="https://formspree.io/f/xdkayrln" method="POST" style="max-width: 500px; margin: 0 auto;">
   
   <!-- Name Field -->
-  <label for="name">Your Name:</label><br>
-  <input type="text" id="name" name="name" required><br><br>
-
+  <input type="text" name="name" placeholder="Name" required style="width: 100%; padding: 10px; margin: 10px 0;" />
+  
+  <!-- Phone Number Field -->
+  <input type="text" name="phone" placeholder="Phone Number" required style="width: 100%; padding: 10px; margin: 10px 0;" />
+  
   <!-- Email Field -->
-  <label for="email">Your Email:</label><br>
-  <input type="email" id="email" name="email" required><br><br>
-
+  <input type="email" name="email" placeholder="Email" required style="width: 100%; padding: 10px; margin: 10px 0;" />
+  
   <!-- Message Field -->
-  <label for="message">Your Message:</label><br>
-  <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+  <textarea name="message" placeholder="Message" required style="width: 100%; padding: 10px; margin: 10px 0; height: 120px;"></textarea>
 
   <!-- Submit Button -->
-  <button type="submit">Send Message</button>
+  <button style="background-color: rgb(68, 1, 1); border: 2px solid white; color: white; 
+  padding: 12px 20px; font-size: 16px; font-weight: bold; border-radius: 5px; cursor: pointer; 
+  transition: all 0.3s ease-in-out;" 
+  type="submit"
+  onmouseover="this.style.backgroundColor='#0a2202'; this.style.borderColor='#36ad12';"
+  onmouseout="this.style.backgroundColor='rgb(68, 1, 1)'; this.style.borderColor='white';">
+  SEND MESSAGE
+  </button>
 
 </form>
 
-  <!-- Submit Button -->
-  <button type="submit">Send Message</button>
-</form>
+
+
+    </form>
 
 
   </div>
